@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WICREATE Webpage Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Light pink background */
+            color: #333; /* Dark gray text color */
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+            position: relative; /* Ensure proper positioning of footer */
+            padding-bottom: 60px; /* Add padding to accommodate the footer */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #7e57c2; /* Purple header background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #512da8; /* Dark purple navigation background */
+            color: #fff; /* White text color */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff; /* White link color */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        /* Output section styles */
+        #outputs {
+            background-color: #1a1a1a; /* Dark gray background */
+            color: #fff; /* White text color */
+            padding: 20px;
+        }
+
+        #outputs img {
+            margin-bottom: 20px; /* Add space between images */
+            max-width: 100%; /* Limit image width to container width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure images are in a single column */
+        }
+
+        /* Ensure images are hidden in other sections */
+        section:not(#outputs) img {
+            display: none;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #7e57c2; /* Purple footer background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+            position: absolute; /* Position the footer absolutely */
+            bottom: 0;
+            width: 100%;
+        }
+
+        blockquote {
+            font-size: 100px; /* Larger font size */
+            font-family: "Times New Roman", Times, serif; /* Creative font */
+            padding: 20px;
+            border-left: 5px solid #7e57c2; /* Purple border on the left */
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Space between blockquote and image */
+        }
+
+        img {
+            max-width: 50%; /* Limit image width to 50% of the container */
+            display: block; /* Ensure the image is on a new line */
+
+        }
+        /* Center the video container */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Add margin to separate from other content */
+        }
+
+        /* Adjust the width of the video */
+        .video-container video {
+            width: 80%; /* Set the width to 80% of the container */
+            max-width: 1000px; /* Limit the maximum width */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WICREATE Webpage Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About Me</a>
+    <a href="#" onclick="showSection('outputs')">Outputs</a>
+    <a href="#" onclick="showSection('showreel')">Showreel</a>
+    <a href="#" onclick="showSection('capstone')">CAPSTONE Initiative</a>
+    <a href="#" onclick="showSection('reflections')">Reflections</a>
+    <a href="#" onclick="showSection('contacts')">Contacts</a>
+</nav>
+
+<section id="home" class="active">
+    <h2>Welcome to my Portfolio</h2>
+    <p>Welcome to my portfolio, where creativity meets digital innovation. Step into a world where ideas come to life through code and design. Explore a showcase of my passions, projects, and aspirations. Join me on a journey of discovery and inspiration as we navigate through the realms of art and technology. Thank you for visiting, and I hope you find something that sparks your interest.</p>
+    <blockquote>
+        "Nothing is impossible. The word itself says I'm Possible."
+        <img src="I.png" alt="Your Image">
+    </blockquote>
+
+    <style>
+        /* Hide all images in the home section */
+        #home img {
+            display: none;
+        }
+
+        /* Display the I.png image in the home section */
+        #home img[src="I.png"] {
+            display: inline-block;
+        }
+    </style>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Donna, a Grade 12 humanities and social science student. My academic journey has nurtured my curiosity about the human experience and deepened my commitment to understanding the world. I've honed my research and analytical skills, allowing me to engage effectively in complex discussions and coursework. I firmly believe in the transformative power of education and look forward to applying my knowledge to real-world challenges. As I move forward, I aspire to explore the intricacies of human society and its diverse cultures, histories, and social dynamics while contributing positively to our global community.</p>
+    <img src="resume.png" alt="resume" width="500" height="600">
+    <style>
+       
+        /* Hide all images in the about section */
+        #about img {
+            display: none;
+        }
+
+        /* Display the I.png image in the about section */
+        #about img[src="resume.png"] {
+            display: inline-block;
+        }
+
+    </style>
+</section>
+
+<section id="outputs">
+    <h2>Outputs</h2>
+    <p>Here are some of the outputs I've created:</p>
+    <div class="image-container">
+    <img src="Postcard 1.png" alt="Postcard" width="300" height="200">
+    <img src="Postcard 2.png" alt="Postcard" width="300" height="200">
+    <img src="Brochure 1.png" alt="Brochure" width="300" height="200">
+    <img src="Brochure 2.png" alt="Brochure" width="300" height="200">
+    <img src="Portfolio 1.png" alt="Portfolio" width="300" height="200">
+    <img src="Portfolio 2.png" alt="Portfolio" width="300" height="200">
+    <img src="Pitchdeck 1.png" alt="Pitchdeck" width="300" height="200">
+    <img src="Pitchdeck 2.png" alt="Pitchdeck" width="300" height="200">
+    <img src="Flyer.png" alt="Flyer" width="300" height="500">
+    <img src="Poster.png" alt="Poster" width="300" height="500">
+    <div class="image-container">
+    <style>
+    /* Define a two-column layout for the image containers */
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Ensure images maintain their aspect ratio */
+    .image-container img {
+        width: calc(50% - 10px); /* 50% width with some margin */
+        margin-bottom: 20px;
+    }
+
+    /* Adjust margin for smaller screens */
+    @media (max-width: 600px) {
+        .image-container img {
+            width: 100%; /* Full width on smaller screens */
+        }
+    }
+</style>
+</section>
+
+<section id="showreel">
+    <h2>Showreel</h2>
+    <div class="video-container">
+        <video controls width="800" height="600">
+            <source src="Showreel.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section id="capstone">
+    <h2>CAPSTONE Initiative</h2>
+    <p>Our research idea is all about the EFFECTS OF DIFFICULTY LEVEL ON THE ADAPTABILITY LEVEL OF THE SELECTED SENIOR HIGHSCHOOL STUDENTS LIVING IN DORMS. Nowadays, many students who live far away from home choose dormitory life because of the convenience of going to school. Living in a dormitory provides them with the flexibility to manage their schedules effectively, allowing them to spend more time on academic pursuits instead of wasting it on daily commutes. While many students find this arrangement beneficial, some students struggle with time management and face psychological challenges associated with extended stays. Therefore, the researchers proposed developing a website called "AbouTime" to help students optimize their time and address mental health issues. The platform is designed to provide features for efficient time organization and promote mental clarity and stress relief.</p>
+   
+    <h3>Below is the abstract of our CAPSTONE</h3>
+
+    <p>Living in a dormitory, while beneficial for students, may impose some difficulties in their ability to adapt or the difficulty level in balancing their academic and living responsibilities. As a result, this research will investigate the effect of the difficulty level on the adaptability level of senior high school students of De La Salle Lipa living in a dormitory. The purpose of this study is to aid the concerns that students living in dormitories often encounter– this includes distractions in the dormitories, difficulty balancing personal and academic aspects of their life, lack of time and energy to accomplish schoolworks after cleaning up in the dormitory, and much more. Moreover, a Sequential Explanatory research design will be utilized throughout this mixed-methods study to ensure the validity of the results. After thirty (30) carefully-chosen respondents are attained from a purposive sampling, they will be subjected into answering a 4-point likert scale survey, and then 10 respondents from the total will be interviewed for the collection of the qualitative data. The quantitative data collected from the surveys will be analyzed using Mean and Linear Regression Analysis. Meanwhile, the qualitative data will go through the process of Glaserian Coding. All relative data will be organized and tabulated in order to ensure a proper analysis of the data, which will then result in better accuracy of the results. This will enable the researchers to know what to apply and what to improve in the interactive scheduling website, that aims to assist students in their daily dormitory and academic life, called AbouTime.</p>
+
+    <img src="aboutime 1.png" alt="aboutime" width="450" height="450">
+    <img src="aboutime 2.png" alt="aboutime" width="450" height="450">
+    <img src="team.jpg" alt="team" width="450" height="450">
+   <div class="image-container">
+    <style>
+       
+        /* Display the aboutime 1.png image in the capstone section */
+        #capstone img[src="aboutime 1.png"] {
+            display: inline-block;
+        }
+         /* Display the aboutime 2.png image in the capstone section */
+        #capstone img[src="aboutime 2.png"] {
+            display: inline-block;
+        }   
+             /* Display the team.jpg image in the capstone section */
+        #capstone img[src="team.jpg"] {
+            display: inline-block;
+
+    </style>
+</section>
+
+<section id="reflections">
+    <h1>Reflections</h1>
+    <p>Developing my webpage portfolio was an eye-opening experience where I learned to combine artistic expression with technical skills. Through research, I grasped the significance of reliable sources and accurate information to maintain credibility. Coding became a tool that allowed me to translate my ideas into a digital reality, enhancing both my creativity and problem-solving abilities. Peer and teacher feedback were invaluable in refining my work, teaching me to accept criticism constructively. Collaborating with others taught me the importance of communication and teamwork in achieving a common goal. This project not only improved my digital literacy but also instilled in me a sense of pride and accomplishment in showcasing my work. As a Grade 12 HUMSS student, this endeavor broadened my understanding of digital communication and presentation, preparing me for future endeavors in both academia and beyond.</p>
+
+
+</section>
+
+<section id="contacts">
+    <h2>Contact Me</h2>
+    <p>Email: donna_marie_chen@dlsl.edu.ph</p>
+    <p>Contact Number: 09178860273</p>
+      <blockquote>
+        "Nothing is impossible. The word itself says I'm Possible."
+        <img src="I.png" alt="I.png">
+    </blockquote>
+
+    <style>
+        /* Hide all images in the contact section */
+        #contact img {
+            display: none;
+        }
+
+        /* Display the I.png image in the contact section */
+        #contact img[src="I.png"] {
+            display: inline-block;
+        }
+    </style>
+</section>
+
+<footer>
+    <p>&copy; 2024 WICREATE Webpage Portfolio By Donna Marie S. Chen</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
